@@ -1,0 +1,1129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="A team quiz on how Decade should sound.">
+<title>How Decade Sounds</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --ink:#0b0b0b; --ink-2:#3b3a37; --muted:#6b6863;
+  --line:#e8e5df; --line-2:#cfcac1;
+  --gold:#cfa865; --gold-ink:#7e6026; --gold-wash:#f7f1e6; --on-ink:#ffffff;
+  --serif:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  --sans:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0b0b0b; --ink:#f3f1ec; --ink-2:#d2cec6; --muted:#9e998f;
+    --line:#26241f; --line-2:#3d3a34;
+    --gold:#cfa865; --gold-ink:#cfa865; --gold-wash:#1b1711; --on-ink:#0b0b0b;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0b0b0b; --ink:#f3f1ec; --ink-2:#d2cec6; --muted:#9e998f;
+  --line:#26241f; --line-2:#3d3a34;
+  --gold:#cfa865; --gold-ink:#cfa865; --gold-wash:#1b1711; --on-ink:#0b0b0b;
+  color-scheme:dark;
+}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+*{box-sizing:border-box}
+.wrap{max-width:680px;margin:0 auto;padding:0 max(20px, env(safe-area-inset-right, 0px)) 0 max(20px, env(safe-area-inset-left, 0px))}
+p{margin:0 0 16px}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--gold-ink);outline-offset:3px;border-radius:6px}
+
+/* shared */
+.kicker{font:500 14px/1.4 var(--sans);color:var(--muted);margin:0 0 28px}
+.lede{font-size:18px;color:var(--ink-2);max-width:34em}
+.small{font-size:14px;line-height:1.5;color:var(--muted)}
+.btn{appearance:none;border:0;border-radius:999px;background:var(--ink);color:var(--on-ink);font:500 16px/1 var(--sans);padding:16px 28px;cursor:pointer}
+.btn:hover{background:var(--ink-2)}
+.btn.quiet{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line-2)}
+.btn.quiet:hover{box-shadow:inset 0 0 0 1px var(--ink)}
+.link{appearance:none;background:none;border:0;padding:4px 0;color:var(--ink);font:400 15px/1.4 var(--sans);text-decoration:underline;text-decoration-color:var(--line-2);text-underline-offset:4px;cursor:pointer}
+.link:hover{text-decoration-color:var(--ink)}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;margin:0 0 22px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0 18px;font-size:14px;color:var(--muted)}
+.top .link{font-size:14px;color:var(--muted);text-decoration:none}
+.top .link:hover{color:var(--ink)}
+.progress{height:2px;background:var(--line);position:relative}
+.progress span{position:absolute;left:0;top:0;bottom:0;background:var(--gold)}
+.nw{white-space:nowrap}
+
+/* cover */
+.cover{padding:min(14vh,120px) 0 72px}
+.quote{margin:0;font:400 clamp(30px,5.4vw,50px)/1.15 var(--serif);letter-spacing:-.015em;text-wrap:balance}
+.quote p{margin:0}
+.cite{display:flex;align-items:center;gap:14px;margin:28px 0 0;font-size:15px;color:var(--muted)}
+.cite::before{content:"";flex:none;width:28px;height:2px;background:var(--gold)}
+.cover-foot{margin-top:76px;padding-top:30px;border-top:1px solid var(--line)}
+h1{font:600 30px/1.2 var(--serif);letter-spacing:-.01em;margin:0 0 12px}
+.cover .lede{margin-bottom:30px}
+
+/* intro */
+.intro{padding:24px 0 72px}
+.section{padding:44px 0 28px;border-top:1px solid var(--line)}
+.section:first-of-type{border-top:0;padding-top:28px}
+.num{font:500 14px/1.4 var(--sans);color:var(--gold-ink);margin:0 0 16px;font-variant-numeric:tabular-nums}
+h2{font:500 clamp(26px,3.6vw,34px)/1.2 var(--serif);letter-spacing:-.01em;margin:0 0 20px;text-wrap:balance}
+.section p{max-width:36em}
+.pull{margin:34px 0 30px;padding:2px 0 2px 22px;border-left:2px solid var(--gold)}
+.pull p{font:italic 400 clamp(22px,3vw,27px)/1.32 var(--serif);margin:0;max-width:none}
+.pull footer{font-size:15px;color:var(--muted);margin-top:12px}
+.voice{font:400 clamp(30px,4.6vw,42px)/1.14 var(--serif);letter-spacing:-.015em;margin:0 0 24px;text-wrap:balance}
+
+/* moment */
+.q{padding:38px 0 0}
+.q-meta{display:flex;flex-wrap:wrap;gap:4px 10px;font-size:14px;color:var(--muted);margin:0 0 16px}
+.situation{font:400 clamp(23px,3.2vw,28px)/1.32 var(--serif);letter-spacing:-.01em;margin:0 0 12px;text-wrap:pretty}
+.context{font-size:16px;line-height:1.5;color:var(--ink-2);margin:0 0 14px;max-width:36em}
+.ask{font-size:15px;color:var(--muted);margin:0 0 22px}
+.opts{display:grid;gap:10px}
+.opt{display:grid;grid-template-columns:26px 1fr;gap:4px 10px;align-items:start;width:100%;text-align:left;background:transparent;border:1px solid var(--line-2);border-radius:14px;padding:17px 18px;font:400 17px/1.45 var(--sans);color:var(--ink);cursor:pointer;transition:border-color .15s ease,background-color .15s ease}
+.opt:hover{border-color:var(--ink)}
+.opt .l{font:500 14px/1.75 var(--sans);color:var(--muted)}
+.opt .t{display:block;min-width:0}
+.opt .h{display:block;font-weight:600;margin-bottom:3px}
+.opt .ln{display:block}
+.opt .ln + .ln{margin-top:8px}
+.opt.poster .t{font:400 22px/1.28 var(--serif);letter-spacing:-.01em}
+.opt[aria-checked="true"],.opt[aria-checked="true"]:hover{border-color:var(--gold);background:var(--gold-wash)}
+.opt .tag{grid-column:2;font:500 14px/1.4 var(--sans);color:var(--gold-ink);margin-top:6px}
+.none{margin-top:14px}
+.none .link{font-size:15px;color:var(--muted)}
+.none .link[aria-pressed="true"]{color:var(--ink);text-decoration-color:var(--gold)}
+.extra{margin-top:30px;padding-top:26px;border-top:1px solid var(--line)}
+.field{margin:0 0 22px}
+.field label{display:block;font:600 15px/1.4 var(--sans);margin:0 0 4px}
+.field .hint{display:block;font-size:14px;color:var(--muted);margin:0 0 10px}
+textarea{display:block;width:100%;min-height:84px;resize:vertical;border:1px solid var(--line-2);border-radius:12px;background:transparent;color:var(--ink);font:400 16px/1.5 var(--sans);padding:12px 14px;margin:0}
+textarea:focus{outline:2px solid var(--gold-ink);outline-offset:1px}
+.status{min-height:21px}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:34px 0 72px;min-height:48px}
+
+/* end */
+.end{padding:28px 0 72px}
+.list{list-style:none;margin:0;padding:0}
+.list li{border-top:1px solid var(--line)}
+.list li:last-child{border-bottom:1px solid var(--line)}
+.list button{appearance:none;display:grid;grid-template-columns:minmax(0,1fr);gap:2px;width:100%;background:none;border:0;padding:14px 0;text-align:left;cursor:pointer;font-size:16px}
+.list button:hover .nm{text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--line-2)}
+.list .st{font-size:15px;color:var(--muted)}
+.end .section{padding:40px 0 24px}
+
+/* results */
+.res{padding:28px 0 72px}
+.res-m{padding:36px 0 20px;border-top:1px solid var(--line)}
+.res-m h2{font-size:clamp(22px,3vw,26px);margin:0 0 6px}
+.res-m .small{margin-bottom:18px}
+.row{margin:0 0 16px}
+.row .txt{display:block;font-size:16px;line-height:1.45;margin-bottom:6px}
+.row .bar{display:grid;grid-template-columns:1fr 36px;align-items:center;gap:12px}
+.track{height:8px;background:var(--line);border-radius:4px;overflow:hidden}
+.fill{display:block;height:100%;background:var(--gold);border-radius:4px}
+.count{text-align:right;font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.row .who{display:block;font-size:14px;color:var(--muted);margin-top:4px}
+.notes{list-style:none;margin:0 0 8px;padding:0}
+.notes li{padding:12px 0;border-top:1px solid var(--line);font-size:16px;line-height:1.5}
+.notes li:last-child{border-bottom:1px solid var(--line)}
+.notes .by{display:block;font:500 14px/1.4 var(--sans);color:var(--muted);margin-bottom:3px}
+h3{font:600 15px/1.4 var(--sans);margin:24px 0 10px}
+
+/* v4 */
+a.inline{color:var(--ink);text-decoration:underline;text-decoration-color:var(--line-2);text-underline-offset:4px}
+a.inline:hover{text-decoration-color:var(--ink)}
+.part{padding:min(12vh,96px) 0 72px}
+.part-title{font:400 clamp(36px,6vw,56px)/1.08 var(--serif);letter-spacing:-.02em;margin:0 0 20px}
+.comes{margin:4px 0 22px;padding:14px 16px;border:1px solid var(--line);border-radius:12px}
+.comes p{margin:0}
+.comes-label{font:500 13px/1.4 var(--sans);color:var(--muted);margin-bottom:6px!important}
+.comes-widget{font-size:15px;line-height:1.5;color:var(--ink-2)}
+.comes-buttons{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px!important}
+.pill{display:inline-block;font:500 13px/1.3 var(--sans);color:var(--ink-2);border:1px solid var(--line-2);border-radius:999px;padding:6px 12px}
+.opt .note{grid-column:2;font-size:14px;line-height:1.4;color:var(--muted);margin-top:4px}
+.send-actions{margin-top:6px}
+.send-actions a.btn{text-decoration:none;display:inline-block}
+input[type="text"]{display:block;width:100%;max-width:420px;border:1px solid var(--line-2);border-radius:12px;background:transparent;color:var(--ink);font:400 16px/1.4 var(--sans);padding:12px 14px}
+input[type="text"]:focus{outline:2px solid var(--gold-ink);outline-offset:1px}
+.send-preview{margin-top:8px}
+.btn:disabled{opacity:.6;cursor:default}
+.send-preview summary{cursor:pointer;font-size:15px;color:var(--muted);padding:6px 0}
+.send-preview textarea{min-height:220px;font-size:14px;margin-top:8px}
+.res-part{font:500 14px/1.4 var(--sans);color:var(--gold-ink);margin:40px 0 0;padding-top:24px;border-top:2px solid var(--line)}
+@media (max-width:560px){
+  body{font-size:16px}
+  .opt{grid-template-columns:20px 1fr;padding:15px 14px;font-size:16px}
+  .opt.poster .t{font-size:20px}
+  .nav .btn{flex:1}
+  .cover-foot .btn{width:100%}
+  .cover-foot .actions .link{width:100%;text-align:center}
+  .top .wide{display:none}
+}
+@media (prefers-reduced-motion: reduce){ *{transition:none!important;scroll-behavior:auto!important} }
+</style>
+</head>
+<body>
+<div id="app"></div>
+<noscript><div class="wrap"><p style="padding:40px 0">This quiz needs JavaScript to run.</p></div></noscript>
+
+<script>
+(function () {
+  "use strict";
+
+  var PARTS = [
+    { title: "Saying hello", text: "How Decade introduces itself, who’s talking, and how sure it sounds. These are the calls where the product doc and our draft rules don’t agree yet." },
+    { title: "Out in the world", text: "The brand line, the product line, two posters and the ads. Strangers see these first, and they give us about a second." },
+    { title: "On her phone", text: "The messages Arunima actually gets: SIP days, FD dates, a bonus, and a few we hope we never have to send." }
+  ];
+  var NUM = ["one", "two", "three"];
+
+  var MOMENTS = [
+    /* Part one */
+    {
+      id: "d1", part: 0, short: "Saying hello", channel: "In the app", fn: "First message",
+      situation: "Arunima has just connected her bank, funds and FDs. This is the first thing Decade says to her.",
+      widget: "the first finding: three of her funds cost about ₹4,000 a year more than they need to.",
+      buttons: ["Show me", "See the full review"],
+      opts: [
+        { id: "d1a", t: "Hello, Arunima. I’ve been through your money. Let’s start with the part that’s costing you." },
+        { id: "d1b", t: "Hi Arunima, I’m Decade. You did the boring part, connecting everything. Now I do mine. Here’s the first thing I found." },
+        { id: "d1c", t: "Hi Arunima, I’m Decade, your wealth advisor. I’ve read everything you connected. Here’s the one thing I’d fix first." },
+        { id: "d1d", t: "Hi Arunima, I’m Decade, your personal wealth manager. Our advisors and I have been through everything you connected. Here’s what’s worth your time." }
+      ]
+    },
+    {
+      id: "d2", part: 0, short: "Who’s speaking", channel: "WhatsApp", fn: "Inform", kind: "pair",
+      situation: "The same two messages, written four ways. Who’s doing the talking?",
+      opts: [
+        { id: "d2a", lines: ["I’ve read your four funds. One of them needs a decision. Want to talk it through?", "That forward says the stock will be up 40% by March. Nobody can promise that, so I wouldn’t buy it."] },
+        { id: "d2b", lines: ["We’ve read your four funds. One of them needs a decision. Want to talk it through?", "That forward says the stock will be up 40% by March. Nobody can promise that, so we wouldn’t buy it."] },
+        { id: "d2c", lines: ["I’ve read your four funds, and our research team has checked them. One needs a decision. Want to talk it through?", "That forward says the stock will be up 40% by March. Nobody can promise that, and our research team agrees: I wouldn’t buy it."] },
+        { id: "d2d", lines: ["Decade has read your four funds. One of them needs a decision. Want to talk it through?", "That forward says the stock will be up 40% by March. Nobody can promise that, so Decade wouldn’t buy it."] }
+      ]
+    },
+    {
+      id: "d3", part: 0, short: "Her name", channel: "WhatsApp", fn: "Inform",
+      situation: "Her ₹4 lakh FD matures on 28 October. Do we open with her name?",
+      buttons: ["Keep it safe and earning", "It’s for something specific", "I might need it soon"],
+      opts: [
+        { id: "d3a", t: "Arunima, your ₹4 lakh FD matures on 28 October. Let’s decide what happens to that money before then." },
+        { id: "d3b", t: "Your ₹4 lakh FD matures on 28 October. Let’s decide what happens to that money before then." },
+        { id: "d3c", t: "Hi Arunima. Your ₹4 lakh FD matures on 28 October, so there’s a decision to make before then." },
+        { id: "d3d", t: "A decision for you, Arunima: your ₹4 lakh FD matures on 28 October. What should happen to that money?" }
+      ]
+    },
+    {
+      id: "d4", part: 0, short: "How sure we sound", channel: "WhatsApp", fn: "Inform",
+      situation: "Our research team wants one of her funds replaced: move ₹2.4 lakh, keep ₹60,000 for now. How sure do we sound?",
+      widget: "the change plan: move ₹2.4 lakh to [Fund B], keep ₹60,000 in [Fund A] until 18 November, with the tax and costs.",
+      buttons: ["View my change plan", "Isn’t this just the market?", "Will I pay tax?"],
+      opts: [
+        { id: "d4a", t: "I recommend moving ₹2.4 lakh out of this fund. Here’s the plan." },
+        { id: "d4b", t: "My read: move ₹2.4 lakh out of this fund. Here’s the plan." },
+        { id: "d4c", t: "I’d move ₹2.4 lakh out of this fund. Here’s the plan." },
+        { id: "d4d", t: "Our research team recommends moving ₹2.4 lakh out of this fund. Here’s the plan." }
+      ]
+    },
+    {
+      id: "d5", part: 0, short: "No commission", channel: "In the app", fn: "Educate",
+      situation: "Three of her funds are regular plans, which carry a commission. How do we say Decade doesn’t take one, without making it the headline?",
+      widget: "her three funds next to their direct plans: the same investments, about ₹4,000 a year less.",
+      buttons: ["Guide me through SIP changes", "What are regular and direct plans?", "What about my existing investments?"],
+      opts: [
+        { id: "d5a", t: "These three funds include a commission for the app, agent or distributor you invested through. Decade earns no commission from your mutual funds." },
+        { id: "d5b", t: "Each of these funds has a direct version without the commission. Decade earns nothing from which one you pick." },
+        { id: "d5c", t: "The direct plans of these funds cost about ₹4,000 a year less, because SEBI doesn’t allow them a commission. Decade earns none either way." },
+        { id: "d5d", t: "Decade earns no commission from mutual funds, so I can say this plainly: these three cost you more than they need to." }
+      ]
+    },
+    {
+      id: "d6", part: 0, short: "How many years", channel: "In the app", fn: "Educate",
+      situation: "Same fee, four time frames. Which one makes her care without scaring her?",
+      context: "Her three regular-plan funds hold ₹5 lakh, and she adds ₹25,000 a month. The figures assume 9% a year, as in the product doc.",
+      widget: "the fee gap drawn over time, with its assumptions.",
+      buttons: ["Guide me through SIP changes", "How did you work this out?"],
+      opts: [
+        { id: "d6a", t: "Right now these three funds cost you about ₹330 a month more than the same funds bought direct, and the gap grows with your SIPs." },
+        { id: "d6b", t: "These three funds cost you about ₹4,000 a year more than the same funds bought direct." },
+        { id: "d6c", t: "Over the next three years, these three funds could cost you about ₹25,000 more than the same funds bought direct." },
+        { id: "d6d", t: "Over the next ten years, these three funds could leave you with about ₹2.77 lakh less than the same funds bought direct." }
+      ]
+    },
+    {
+      id: "d7", part: 0, short: "The people behind it", channel: "WhatsApp reply", fn: "Educate",
+      situation: "She asks: “Who actually makes these recommendations?”",
+      context: "Maanas’s biography is still being verified. These lines use the product doc’s version.",
+      widget: "Maanas Agarwal, head of research, 15 years in Indian markets, with Decade’s SEBI registration number.",
+      buttons: ["Can I see the research?", "How do you get paid?", "Can you move money without asking?"],
+      opts: [
+        { id: "d7a", t: "Our research team, led by Maanas Agarwal. Every recommendation I make comes from their research." },
+        { id: "d7b", t: "People you can look up. Maanas Agarwal leads our research team. I’m the AI that brings you their recommendations." },
+        { id: "d7c", t: "Maanas Agarwal and his team. I don’t make up fund opinions; I bring you theirs." },
+        { id: "d7d", t: "Decade’s advisory team, led by Maanas Agarwal. Decade is a SEBI-registered investment advisor, and the registration number is on the card." }
+      ]
+    },
+
+    /* Part two */
+    {
+      id: "t0", part: 1, short: "The brand line", channel: "Under the logo", fn: "Inspire", kind: "poster",
+      situation: "The line that sits under our name for years. It’s about her life, not about the product.",
+      opts: [
+        { id: "t0a", t: "Decide for yourself." },
+        { id: "t0b", t: "Years ahead." },
+        { id: "t0c", t: "To the years ahead." },
+        { id: "t0d", t: "Make it count." }
+      ]
+    },
+    {
+      id: "t1", part: 1, short: "The product line", channel: "Under the logo", fn: "Inform", kind: "poster",
+      situation: "The line that says what Decade is, in her words. A stranger should get it in one read.",
+      opts: [
+        { id: "t1a", t: "A wealth advisor for ambitious people." },
+        { id: "t1b", t: "Money answers for ambitious people." },
+        { id: "t1c", t: "A research team for your wealth." },
+        { id: "t1d", t: "Where your money gets an answer." }
+      ]
+    },
+    {
+      id: "t2", part: 1, short: "Poster: being early", channel: "Poster on a metro platform", fn: "Inspire", kind: "poster",
+      situation: "A poster on a metro platform. You have until the train pulls in. The corner says Decade.",
+      opts: [
+        { id: "t2a", t: "Your phone has 4,000 reviews. Your SIP has none." },
+        { id: "t2b", t: "Congratulations on your first lakh. Your advisor’s here." },
+        { id: "t2c", t: "26, one SIP, one FD, a five-year plan. Right on time for an advisor." },
+        { id: "t2d", t: "At 22, everyone had advice about your career. Nobody sat down with your money." }
+      ]
+    },
+    {
+      id: "t3", part: 1, short: "Poster: a smile", channel: "Poster or social post", fn: "Inspire", kind: "poster",
+      situation: "A poster that should make someone smile. Each line tries it a different way.",
+      opts: [
+        { id: "t3a", t: "The early bird gets the advisor." },
+        { id: "t3b", t: "You live the decade. We’ll do the paperwork." },
+        { id: "t3c", t: "We get excited about exit loads, so you don’t have to." },
+        { id: "t3d", t: "Your first salary arrived with a lot of advice and no advisor." }
+      ]
+    },
+    {
+      id: "t4", part: 1, short: "Static ads", channel: "Instagram static ad", fn: "Engage", kind: "ad",
+      situation: "Four static ads you’d see while doomscrolling.",
+      context: "Every ad ends the same way: SEBI-registered investment advisor. ₹99 the first month, then ₹299. Cancel any month.",
+      ask: "Which one stops your thumb?",
+      opts: [
+        { id: "t4a", h: "Is your SIP still the right one?", t: "Connect your funds and Decade tells you, in minutes, whether to keep or change it, and why." },
+        { id: "t4b", h: "Tax-saving fund? Ask Decade first", t: "On the new tax regime it saves you nothing, and locks your money for three years. Decade checks first." },
+        { id: "t4c", h: "Your FD matures soon. Then what?", t: "Tell Decade what that money is for. It plans where it goes next around that, before the date." },
+        { id: "t4d", h: "Will your SIPs get you there?", t: "Tell Decade what you’re saving for and by when. It shows you if you’re on track, and what to change if not." }
+      ]
+    },
+    {
+      id: "t5", part: 1, short: "The portfolio review offer", channel: "Instagram static ad", fn: "Engage", kind: "ad",
+      situation: "Most finance apps get people in the door with a free look at their funds. Ours costs ₹99 and comes with an advisor. Four ways to say it, each with a different reason to trust us.",
+      opts: [
+        { id: "t5a", h: "Which of your funds is pulling its weight?", t: "Decade tells you what to keep and what to change in your funds. It can see them, but it can’t move a rupee without you." },
+        { id: "t5b", h: "Your funds, read by real advisors", t: "Decade’s research team, led by Maanas Agarwal, reads every fund you own and tells you what to change. SEBI-registered." },
+        { id: "t5c", h: "Your funds, reviewed in minutes", t: "Connect your funds. Decade, a SEBI-registered advisor, tells you what it would change and why. ₹99 the first month." },
+        { id: "t5d", h: "Ask Decade about your mutual funds", t: "Send a screenshot of your funds. Decade replies with what it would change, and why. It earns no commission on any of them." }
+      ]
+    },
+
+    /* Part three */
+    {
+      id: "s1", part: 2, short: "SIP tomorrow", channel: "Push notification", fn: "Inform", kind: "push",
+      situation: "The night before her ₹10,000 SIP goes out. She has ₹38,400 in the bank. It lands on her lock screen somewhere between two reels.",
+      opts: [
+        { id: "s1a", h: "SIP. Don’t skip.", t: "₹10,000 goes out tomorrow. Balance is fine. Tap to pause if you need to." },
+        { id: "s1b", h: "SIP tomorrow: ₹10,000", t: "Balance ₹38,400, which covers it with ₹28,400 to spare." },
+        { id: "s1c", h: "₹10,000 leaves tomorrow", t: "That’s your SIP, on the 5th as usual. Balance covers it." },
+        { id: "s1d", h: "5th = SIP day", t: "₹10,000, as usual. Balance fine. I’ll confirm once it’s through." }
+      ]
+    },
+    {
+      id: "f1", part: 2, short: "FD maturity: her options", channel: "WhatsApp", fn: "Educate",
+      situation: "Her ₹4 lakh FD matures on 28 October. She wants it safe and earning.",
+      widget: "an FD, a liquid fund and a split, side by side: what each earns, when she can take money out, and what’s guaranteed.",
+      buttons: ["Keep all of it accessible", "Keep some accessible", "I can leave it for a year"],
+      opts: [
+        { id: "f1a", t: "Here are the ways to keep it safe. How much would you like within easy reach?" },
+        { id: "f1b", t: "₹4 lakh, safe and earning. Which of these fits depends on how soon you might need it." },
+        { id: "f1c", t: "Your FD matures on 28 October. Here’s what that ₹4 lakh could do next." },
+        { id: "f1d", t: "Safe and earning, got it. Could you need any of it this year?", note: "Here the card comes after her answer." }
+      ]
+    },
+    {
+      id: "f2", part: 2, short: "Recommending an FD", channel: "WhatsApp", fn: "Inform",
+      situation: "She wants a one-year FD for ₹4 lakh. Decade recommends one she can book here.",
+      context: "Decade’s fee from the bank is shown on the review screen before she books, and in the answer to “How does Decade get paid?”. [Bank] and the rate are placeholders.",
+      widget: "the FD: bank, one year, 8%, about ₹33,000 interest before tax, insured up to ₹5 lakh.",
+      buttons: ["Review FD on Decade", "Why this FD?", "Can I stay with my bank?"],
+      opts: [
+        { id: "f2a", t: "I recommend [Bank]’s one-year FD. It matures when you said you’d need the money, and pays about ₹33,000 before tax." },
+        { id: "f2b", t: "This one fits: [Bank], one year, about ₹33,000 before tax." },
+        { id: "f2c", t: "For a year, I’d put the ₹4 lakh here." },
+        { id: "f2d", t: "₹4 lakh in, about ₹4.33 lakh back in a year, before tax." }
+      ]
+    },
+    {
+      id: "f3", part: 2, short: "Too much in one industry", channel: "In the app", fn: "Educate",
+      situation: "She owns five mutual funds. Underneath, ₹4 lakh of her ₹10 lakh is in technology companies.",
+      widget: "each fund’s share in technology, then the total: ₹4 lakh, 40%.",
+      buttons: ["View my diversification plan", "How can five funds have the same risk?", "I chose technology on purpose"],
+      opts: [
+        { id: "f3a", t: "₹4 lakh of your money is riding on technology companies, even though you own five different funds." },
+        { id: "f3b", t: "Your five funds overlap more than they look. Here’s where your money actually sits." },
+        { id: "f3c", t: "Five funds, one industry." },
+        { id: "f3d", t: "40% of your money is in technology companies. Was that on purpose?" }
+      ]
+    },
+    {
+      id: "f4", part: 2, short: "A fall that cuts her tax", channel: "In the app", fn: "Educate",
+      situation: "She put ₹2.5 lakh into a fund now worth ₹2 lakh. Selling and buying back could cut this year’s tax by about ₹6,500.",
+      widget: "the money table: put in ₹2.5 lakh, worth ₹2 lakh today, sell ₹2 lakh, buy back into the same fund for ₹2 lakh, about ₹6,500 less tax this year.",
+      buttons: ["View my tax-saving plan", "Am I losing another ₹50,000?", "What’s the catch?"],
+      opts: [
+        { id: "f4a", t: "You could pay about ₹6,500 less tax this year and stay in the same fund." },
+        { id: "f4b", t: "Your fund’s ₹50,000 fall can cut this year’s tax by about ₹6,500." },
+        { id: "f4c", t: "You’re not losing another ₹50,000. That fall has already happened, and it can cut your tax by about ₹6,500." },
+        { id: "f4d", t: "Sell, buy back into the same fund, and pay about ₹6,500 less tax this year." }
+      ]
+    },
+    {
+      id: "f5", part: 2, short: "No nominee", channel: "In the app", fn: "Inform",
+      situation: "Her biggest fund holds ₹2 lakh, with no nominee recorded.",
+      widget: "her account: the fund, ₹2 lakh, a ₹5,000 SIP, nominee: none.",
+      buttons: ["Guide me to add a nominee", "Can they access my money?", "I already added one"],
+      opts: [
+        { id: "f5a", t: "Your biggest fund has ₹2 lakh in it and no nominee. Adding one makes it easier for your family to claim it if something happens to you." },
+        { id: "f5b", t: "Your ₹2 lakh fund has no nominee. Adding one takes a few minutes and doesn’t touch your money or your SIP." },
+        { id: "f5c", t: "No nominee on your biggest fund yet. Want to add one?" },
+        { id: "f5d", t: "If something happened to you, your family would need a nominee to claim this ₹2 lakh. There isn’t one yet." }
+      ]
+    },
+    {
+      id: "b1", part: 2, short: "The bonus", channel: "WhatsApp", fn: "Engage",
+      situation: "A ₹1.2 lakh bonus landed this morning. She’s already looking at flights.",
+      opts: [
+        { id: "b1a", t: "Bonus day. Treat yourself first. When you’re ready, reply here and I’ll help you plan the rest." },
+        { id: "b1b", t: "₹1.2 lakh landed today. That’s worth a small celebration and one small decision. The decision can wait a week." },
+        { id: "b1c", t: "Congratulations on the bonus. After the credit card bill, about ₹85,000 of it is free. Want a plan for it?" },
+        { id: "b1d", t: "Congratulations on the bonus. Enjoy some of it this month. Next month, let’s talk about the rest." }
+      ]
+    },
+    {
+      id: "b2", part: 2, short: "Twelve SIPs", channel: "WhatsApp", fn: "Engage",
+      situation: "Her twelfth SIP in a row just went through. Not one missed.",
+      opts: [
+        { id: "b2a", t: "Twelve SIPs without a miss. That’s ₹1.2 lakh invested on time, every time. Nothing to do; I just noticed." },
+        { id: "b2b", t: "Twelve SIPs without a miss. I may have done a small dance." },
+        { id: "b2c", t: "Twelve SIPs in a row, not one missed. Most gym memberships don’t last this long." },
+        { id: "b2d", t: "Your twelfth SIP just went through. A full year, on time every month." }
+      ]
+    },
+    {
+      id: "b3", part: 2, short: "Our mistake", channel: "WhatsApp", fn: "Inform",
+      situation: "Yesterday Decade told her the balance was too low for her SIP. It wasn’t. Our mistake, so our message.",
+      opts: [
+        { id: "b3a", t: "I sent you a wrong alert yesterday. Nothing moved and nothing needs you. I’ve fixed what caused it." },
+        { id: "b3b", t: "That low-balance alert was wrong, and I’m sorry for the worry. Your SIP is fine. Reply here if you want to know what happened." },
+        { id: "b3c", t: "I owe you a correction. Your balance was never short. The alert was my error, and it’s fixed so it won’t repeat." },
+        { id: "b3d", t: "Yesterday’s low-balance alert was wrong, and that’s on me. Your balance was fine all along, and I’ve fixed what caused it." }
+      ]
+    },
+    {
+      id: "b4", part: 2, short: "The price goes up", channel: "WhatsApp", fn: "Inform",
+      situation: "Her ₹99 first month ends on the 24th. After that it’s ₹299 a month.",
+      opts: [
+        { id: "b4a", t: "A decision for you. The ₹99 month ends in three days; after that it’s ₹299 a month. Go ahead, or stop any time with one reply." },
+        { id: "b4b", t: "In your first month I read four funds, flagged one, and stepped up your SIP. From the 24th it’s ₹299 a month." },
+        { id: "b4c", t: "Small thing, worth a minute. Your plan moves to ₹299 a month on the 24th. If it hasn’t been worth it, reply “stop” and it ends there." },
+        { id: "b4d", t: "On the 24th your plan becomes ₹299 a month. I’d rather you stayed because it’s useful. If it isn’t, tell me why." }
+      ]
+    },
+    {
+      id: "b5", part: 2, short: "Cancelling", channel: "WhatsApp", fn: "Inform",
+      situation: "She replies with one word: “cancel”. Her plan is paid up to the 24th.",
+      opts: [
+        { id: "b5a", t: "Cancelled. No charges after the 24th. If you have a minute, what didn’t work for you?" },
+        { id: "b5b", t: "Done. Thanks for the month. If something I said was wrong or unclear, I’d like to know." },
+        { id: "b5c", t: "Cancelled. You keep everything I sent you: the fund review, the tax note, the SIP plan." },
+        { id: "b5d", t: "Done. Your plan ends on the 24th. Reply “start” if you ever want it back." }
+      ]
+    }
+  ];
+
+  var RULES_URL = "https://claude.ai/artifact/M84Tv2GZ1E5xBwchs3LrC9";
+  var TOTAL = MOMENTS.length;
+  var LETTERS = ["A", "B", "C", "D"];
+  var LS_KEY = "decade-how-we-sound-v4";
+  var COLL = "responses-v4";
+  var app = document.getElementById("app");
+
+  var S = { screen: "cover", i: 0, p: 0, picks: {}, why: {}, own: {}, final: "", name: "" };
+  // Paste the Google Apps Script web app URL (it ends in /exec) between the quotes.
+  var SHEET_URL = "PASTE_WEB_APP_URL_HERE";
+  var RID = "";
+  var db = null, user = null, uid = null, live = false, canWrite = true, booted = false, owner = false;
+  var team = new Map(), names = {};
+  var saveState = "";
+  var seed = "";
+  var demoMode = false;
+
+  try {
+    RID = localStorage.getItem(LS_KEY + "-rid") || "";
+    if (!RID) { RID = "r" + Date.now().toString(36) + Math.random().toString(36).slice(2, 8); localStorage.setItem(LS_KEY + "-rid", RID); }
+    seed = localStorage.getItem(LS_KEY + "-seed") || "";
+    if (!seed) { seed = String(Math.random()).slice(2); localStorage.setItem(LS_KEY + "-seed", seed); }
+    var saved = JSON.parse(localStorage.getItem(LS_KEY) || "null");
+    if (saved && typeof saved === "object") load(saved);
+  } catch (e) { if (!seed) seed = String(Math.random()).slice(2); if (!RID) RID = "r" + Date.now().toString(36) + Math.random().toString(36).slice(2, 8); }
+
+  function cleanText(map) {
+    var out = {};
+    if (map && typeof map === "object") MOMENTS.forEach(function (m) { if (typeof map[m.id] === "string" && map[m.id].trim()) out[m.id] = map[m.id].slice(0, 2000); });
+    return out;
+  }
+  function cleanPicks(p) {
+    var out = {};
+    if (p && typeof p === "object") MOMENTS.forEach(function (m) {
+      var v = p[m.id];
+      if (v === "none" || m.opts.some(function (o) { return o.id === v; })) out[m.id] = v;
+    });
+    return out;
+  }
+  function load(d, keepLocal) {
+    var picks = cleanPicks(d.picks), why = cleanText(d.why), own = cleanText(d.own);
+    S.picks = keepLocal ? Object.assign(picks, S.picks) : picks;
+    S.why = keepLocal ? Object.assign(why, S.why) : why;
+    S.own = keepLocal ? Object.assign(own, S.own) : own;
+    if (!(keepLocal && S.final) && typeof d.final === "string") S.final = d.final.slice(0, 2000);
+    if (!(keepLocal && S.name) && typeof d.name === "string") S.name = d.name.slice(0, 80);
+  }
+
+  function h(tag, props) {
+    var n = document.createElement(tag);
+    if (props) for (var k in props) {
+      var v = props[k];
+      if (v == null || v === false) continue;
+      if (k === "class") n.className = v;
+      else if (k.slice(0, 2) === "on") n.addEventListener(k.slice(2), v);
+      else n.setAttribute(k, v === true ? "" : v);
+    }
+    for (var i = 2; i < arguments.length; i++) add(n, arguments[i]);
+    return n;
+  }
+  function add(n, c) {
+    if (c == null || c === false) return;
+    if (Array.isArray(c)) { c.forEach(function (x) { add(n, x); }); return; }
+    n.append(c.nodeType ? c : document.createTextNode(String(c).replace(/(\d) (lakh|months)\b/g, "$1 $2")));
+  }
+  function pad(n) { return n < 10 ? "0" + n : String(n); }
+  function answeredM(m) { return !!(S.picks[m.id] || S.own[m.id]); }
+  function done() { return MOMENTS.filter(answeredM).length; }
+  function firstOpen() { for (var i = 0; i < TOTAL; i++) if (!answeredM(MOMENTS[i])) return i; return -1; }
+  function saving() { return (live && canWrite) || demoMode; }
+  function optText(o) { return o.lines ? o.lines.join(" / ") : (o.h ? o.h + " / " + o.t : o.t); }
+  function findOpt(m, id) { for (var k = 0; k < m.opts.length; k++) if (m.opts[k].id === id) return m.opts[k]; return null; }
+  function partStart(p) { for (var i = 0; i < TOTAL; i++) if (MOMENTS[i].part === p) return i; return 0; }
+  function partSize(p) { return MOMENTS.filter(function (m) { return m.part === p; }).length; }
+  function partDone(p) { return MOMENTS.filter(function (m) { return m.part === p && answeredM(m); }).length; }
+
+  function hash(s) { var x = 2166136261; for (var i = 0; i < s.length; i++) { x ^= s.charCodeAt(i); x = Math.imul(x, 16777619); } return x >>> 0; }
+  function ordered(m) {
+    var a = m.opts.slice(), x = hash(seed + m.id) || 1;
+    for (var i = a.length - 1; i > 0; i--) { x ^= x << 13; x >>>= 0; x ^= x >>> 17; x ^= x << 5; x >>>= 0; var j = x % (i + 1); var t = a[i]; a[i] = a[j]; a[j] = t; }
+    return a;
+  }
+
+  /* screens */
+  function cover() {
+    var n = done(), open = firstOpen();
+    var actions;
+    if (n === 0) actions = [h("button", { class: "btn", type: "button", onclick: function () { go("intro"); } }, "Start")];
+    else if (open >= 0) actions = [
+      h("button", { class: "btn", type: "button", onclick: function () { go("m", open); } }, "Pick up at moment " + (open + 1)),
+      h("button", { class: "link", type: "button", onclick: function () { go("intro"); } }, "Read the introduction again")
+    ];
+    else actions = [
+      h("button", { class: "btn", type: "button", onclick: function () { go("end"); } }, "See your picks"),
+      h("button", { class: "link", type: "button", onclick: function () { go("intro"); } }, "Read the introduction again")
+    ];
+    if (owner) actions.push(h("button", { class: "link", type: "button", onclick: function () { go("results"); } }, "Team results"));
+    return h("main", { class: "wrap" },
+      h("section", { class: "cover" },
+        h("p", { class: "kicker" }, "Decade copy desk"),
+        h("blockquote", { class: "quote" }, h("p", null, "“The power of words is immense. A well-chosen word has often sufficed to stop a flying army, to change defeat into victory and to save an empire.”")),
+        h("p", { class: "cite" }, "Attributed to Émile de Girardin"),
+        h("div", { class: "cover-foot" },
+          h("h1", null, "How should Decade sound?"),
+          h("p", { class: "lede" }, "For Decade, words are most of the product, from the push the night before a SIP to the poster on a metro platform. So we’re working out how Decade should sound, and we want the team’s ear on it. Every moment here has four ways to say the same thing. Pick the one that sounds most like us."),
+          h("div", { class: "actions" }, actions),
+          h("p", { class: "small" }, "Three parts, about 20 minutes in all. Stop between parts if you like; your picks are kept.", h("span", { id: "team-count" }, teamCountText()))
+        )
+      )
+    );
+  }
+  function teamCountText() {
+    if (!owner) return "";
+    var n = entries().length;
+    return n ? " " + n + (n === 1 ? " person has" : " people have") + " answered so far." : "";
+  }
+
+  function intro() {
+    return h("main", { class: "wrap" },
+      topBar(""),
+      h("article", { class: "intro" },
+        h("section", { class: "section" },
+          h("p", { class: "num" }, "01  What copy is"),
+          h("h2", null, "Copy is every word a customer reads from us."),
+          h("p", null, "The ad they scroll past at midnight. The push the night before a SIP. The reply at 11pm about whether they can afford a car. The button that says Go ahead."),
+          h("p", null, "Most of our customers will never meet our advisors. Everything they know about us, they’ll have read.")
+        ),
+        h("section", { class: "section" },
+          h("p", { class: "num" }, "02  Voice and tone"),
+          h("h2", null, "The voice stays the same. The tone fits the moment."),
+          h("p", null, "Voice is who we are. Tone is how we sound on a given day. A friend who’s good with money sounds one way when your bonus lands and another when the market falls. You’d still know it was them."),
+          h("blockquote", { class: "pull" },
+            h("p", null, "“Dullness won’t sell your product, but neither will irrelevant brilliance.”"),
+            h("footer", null, "Bill Bernbach, adman")
+          ),
+          h("p", null, "We write to be useful first. If a line also makes someone smile, good.")
+        ),
+        h("section", { class: "section" },
+          h("p", { class: "num" }, "03  Where we’ve got to"),
+          h("p", { class: "voice" }, "An expert’s substance, in a friend’s voice."),
+          h("p", null, "That’s the draft. Decade speaks as “I”, says what it recommends, shows the maths and talks in rupees and dates. The full draft is in ", h("a", { href: RULES_URL, target: "_blank", rel: "noopener", class: "inline" }, "How Decade speaks"), "."),
+          h("p", null, "Every moment in this quiz is a message to Arunima Dasgupta: 26, salaried, a SIP a colleague suggested, an FD her bank sold her. Arunima means first light. Das sounds like ten. Yes, on purpose.")
+        ),
+        h("section", { class: "section" },
+          h("p", { class: "num" }, "04  How this works"),
+          h("p", null, "Three parts. First, how Decade introduces itself, where the product doc and our draft rules don’t agree yet. Then Decade out in the world: the brand and product lines, posters and ads. Then Decade on Arunima’s phone: SIP days, FD dates and the awkward messages."),
+          h("p", null, "Every moment has four real options. None of them is a trick. Pick the one you’d ship. Say why if you like, or write a better line. In the product, most messages come with a card and buttons; where they do, you’ll see what they show."),
+          h("p", null, "Nobody sees anyone else’s picks. When everyone’s done, we’ll go through the team’s choices in a session, surprises first. The tone-of-voice doc comes out of that."),
+          h("p", { class: "small", id: "save-note" }, saveNoteText()),
+          h("div", { class: "actions", style: "margin-top:30px" },
+            h("button", { class: "btn", type: "button", onclick: function () { var o = firstOpen(); if (o > 0) go("m", o); else go("part", 0); } }, done() ? "Back to the moments" : "Start part one")
+          )
+        )
+      )
+    );
+  }
+  function saveNoteText() {
+    if (!booted || saving()) return "Your picks are saved with your name. Only Shubs sees them.";
+    return "Your picks stay on this device as you go. At the end, you send them to Shubs in one tap.";
+  }
+
+  function topBar(right) {
+    return h("div", { class: "top" },
+      h("button", { class: "link", type: "button", onclick: function () { go("cover"); } }, "How should Decade sound?"),
+      h("span", null, right)
+    );
+  }
+
+  function partScreen(p) {
+    var size = partSize(p), d = partDone(p);
+    return h("main", { class: "wrap" },
+      topBar("Part " + (p + 1) + " of 3"),
+      h("section", { class: "part" },
+        h("p", { class: "kicker" }, "Part " + NUM[p] + " · " + size + " moments"),
+        h("h2", { class: "part-title" }, PARTS[p].title),
+        h("p", { class: "lede" }, PARTS[p].text),
+        d ? h("p", { class: "small" }, "You’ve answered " + d + " of " + size + " here.") : null,
+        h("div", { class: "actions", style: "margin-top:30px" },
+          h("button", { class: "btn", type: "button", onclick: function () { go("m", partStart(p)); } }, d ? "Continue part " + NUM[p] : "Start part " + NUM[p]),
+          h("button", { class: "link", type: "button", onclick: function () { if (p === 0) go("intro"); else go("m", partStart(p) - 1); } }, p === 0 ? "Back to the introduction" : "Back to part " + NUM[p - 1])
+        )
+      )
+    );
+  }
+
+  function question(i) {
+    var m = MOMENTS[i], pick = S.picks[m.id];
+    var answered = answeredM(m);
+    var pct = ((i + (answered ? 1 : 0)) / TOTAL) * 100;
+    var opts = ordered(m);
+    return h("main", { class: "wrap" },
+      topBar([h("span", { class: "wide" }, "Part " + (m.part + 1) + " · Moment "), (i + 1) + " of " + TOTAL]),
+      h("div", { class: "progress", "aria-hidden": "true" }, h("span", { style: "width:" + pct + "%" })),
+      h("section", { class: "q", "aria-labelledby": "sit-" + m.id },
+        h("p", { class: "q-meta" }, h("span", null, m.channel), h("span", { "aria-hidden": "true" }, "·"), h("span", null, m.fn)),
+        h("h2", { class: "situation", id: "sit-" + m.id }, m.situation),
+        m.context ? h("p", { class: "context" }, m.context) : null,
+        comes(m),
+        h("p", { class: "ask", id: "ask-" + m.id }, m.ask || "Which one would you ship?"),
+        h("div", { class: "opts", role: "radiogroup", "aria-labelledby": "ask-" + m.id }, opts.map(function (o, k) { return option(m, o, k, pick); })),
+        h("div", { class: "none" },
+          h("button", { class: "link", type: "button", "aria-pressed": pick === "none" ? "true" : "false", onclick: function () { choose(m, pick === "none" ? null : "none"); } },
+            pick === "none" ? "None of these. I’ll write my own below." : "None of these work for me")
+        ),
+        pick ? extras(m, pick) : null,
+        h("div", { class: "nav" },
+          h("button", { class: "link", type: "button", onclick: prev }, prevLabel(i)),
+          h("button", { class: answered ? "btn" : "btn quiet", type: "button", onclick: next }, answered ? nextLabel(i) : "Skip for now")
+        )
+      )
+    );
+  }
+  function nextLabel(i) {
+    if (i === TOTAL - 1) return "Finish";
+    if (MOMENTS[i + 1].part !== MOMENTS[i].part) return "On to part " + NUM[MOMENTS[i + 1].part];
+    return "Next moment";
+  }
+  function prevLabel(i) {
+    if (i === partStart(MOMENTS[i].part)) return "Part " + NUM[MOMENTS[i].part];
+    return "Previous moment";
+  }
+
+  function comes(m) {
+    if (!m.widget && !m.buttons) return null;
+    return h("div", { class: "comes" },
+      h("p", { class: "comes-label" }, "In the product, every option comes with"),
+      m.widget ? h("p", { class: "comes-widget" }, "A card showing " + m.widget) : null,
+      m.buttons ? h("p", { class: "comes-buttons" }, m.buttons.map(function (b) { return h("span", { class: "pill" }, b); })) : null
+    );
+  }
+
+  function option(m, o, k, pick) {
+    var on = o.id === pick;
+    var body = o.lines
+      ? o.lines.map(function (ln) { return h("span", { class: "ln" }, ln); })
+      : [o.h ? h("span", { class: "h" }, o.h) : null, o.t];
+    return h("button", {
+        type: "button", role: "radio", class: "opt" + (m.kind === "poster" ? " poster" : ""),
+        "aria-checked": on ? "true" : "false",
+        onclick: function () { choose(m, o.id); }
+      },
+      h("span", { class: "l" }, LETTERS[k]),
+      h("span", { class: "t" }, body),
+      o.note ? h("span", { class: "note" }, o.note) : null,
+      on ? h("span", { class: "tag" }, "Your pick") : null
+    );
+  }
+
+  function extras(m, pick) {
+    return h("div", { class: "extra" },
+      pick !== "none" ? field("why-" + m.id, "Why this one?", "Optional. A few words is plenty.", S.why[m.id], function (v) { S.why[m.id] = v; }) : null,
+      field("own-" + m.id, pick === "none" ? "Your line" : "Got a line that beats them?", pick === "none" ? "Write the one you’d ship." : "Optional. Write it the way you’d ship it.", S.own[m.id], function (v) { S.own[m.id] = v; }),
+      h("p", { class: "small status" }, h("span", { class: "save-status" }, saveLabel()))
+    );
+  }
+  function field(id, label, hint, value, set) {
+    var ta = h("textarea", { id: id, rows: "3", maxlength: "2000", "aria-describedby": id + "-hint" });
+    ta.value = value || "";
+    ta.addEventListener("input", function () { set(ta.value); setSave("saving"); later(); });
+    ta.addEventListener("blur", flush);
+    return h("div", { class: "field" },
+      h("label", { for: id }, label),
+      h("span", { class: "hint", id: id + "-hint" }, hint),
+      ta
+    );
+  }
+
+  function end() {
+    var skipped = MOMENTS.map(function (m, i) { return { m: m, i: i }; }).filter(function (x) { return !answeredM(x.m); });
+    var finalBox = field("final", "Anything else about how Decade should sound?", "Optional. Anything the moments didn’t cover.", S.final, function (v) { S.final = v; updateSend(); });
+    return h("main", { class: "wrap" },
+      topBar(""),
+      h("article", { class: "end" },
+        h("p", { class: "kicker" }, "Done"),
+        h("h2", null, skipped.length ? "Thanks. A few are still open." : "Thank you. That’s all of it."),
+        h("p", { class: "lede" }, "When everyone’s in, we’ll go through the team’s picks together, surprises first. The tone-of-voice doc comes out of that session."),
+        skipped.length ? h("section", { class: "section" },
+          h("h2", null, "Still open"),
+          h("ul", { class: "list" }, skipped.map(function (x) {
+            return h("li", null, h("button", { type: "button", onclick: function () { go("m", x.i); } },
+              h("span", { class: "nm" }, pad(x.i + 1) + "  " + x.m.short)));
+          }))
+        ) : null,
+        h("section", { class: "section" },
+          h("h2", null, "One last thing"),
+          finalBox,
+          h("p", { class: "small status" }, h("span", { class: "save-status" }, saveLabel()))
+        ),
+        sendSection(),
+        h("section", { class: "section" },
+          h("h2", null, "Your picks"),
+          [0, 1, 2].map(function (p) {
+            return [h("h3", null, "Part " + NUM[p] + ". " + PARTS[p].title),
+              h("ul", { class: "list" }, MOMENTS.map(function (m, i) {
+                if (m.part !== p) return null;
+                var pk = S.picks[m.id], o = pk && pk !== "none" ? findOpt(m, pk) : null;
+                var st = o ? optText(o) : pk === "none" ? "None of these" + (S.own[m.id] ? ". Your line: " + S.own[m.id] : "") : S.own[m.id] ? "Your line: " + S.own[m.id] : "Skipped";
+                return h("li", null, h("button", { type: "button", onclick: function () { go("m", i); } },
+                  h("span", { class: "nm" }, pad(i + 1) + "  " + m.short),
+                  h("span", { class: "st" }, st)));
+              }))];
+          })
+        ),
+        owner ? h("div", { class: "actions", style: "margin-top:30px" }, h("button", { class: "btn", type: "button", onclick: function () { go("results"); } }, "Team results")) : null
+      )
+    );
+  }
+
+
+  /* send my answers */
+  function plain(t) { return String(t).replace(/[“”]/g, "\"").replace(/[‘’]/g, "'"); }
+  function answersText() {
+    var who = S.name.trim() || "(no name)";
+    var out = ["How should Decade sound? Answers from " + who, ""];
+    MOMENTS.forEach(function (m, i) {
+      var pk = S.picks[m.id], o = pk && pk !== "none" ? findOpt(m, pk) : null;
+      var head = "[" + m.id + "] " + pad(i + 1) + " " + plain(m.short) + ": ";
+      out.push(head + (o ? "\"" + plain(optText(o)) + "\"" : pk === "none" ? "none of these" : "skipped"));
+      if (S.why[m.id]) out.push("   Why: " + plain(S.why[m.id].trim()));
+      if (S.own[m.id]) out.push("   My line: " + plain(S.own[m.id].trim()));
+    });
+    if (S.final.trim()) { out.push(""); out.push("Anything else: " + plain(S.final.trim())); }
+    return out.join("\n");
+  }
+  function payload() {
+    return {
+      id: RID, name: S.name.trim(), final: plain(S.final.trim()),
+      answers: MOMENTS.map(function (m, i) {
+        var pk = S.picks[m.id], o = pk && pk !== "none" ? findOpt(m, pk) : null;
+        return {
+          label: pad(i + 1) + " " + plain(m.short),
+          pick: o ? plain(optText(o)) : pk === "none" ? "none of these" : "",
+          why: plain((S.why[m.id] || "").trim()),
+          own: plain((S.own[m.id] || "").trim())
+        };
+      })
+    };
+  }
+  function sendSection() {
+    var nameInput = h("input", { type: "text", id: "send-name", maxlength: "80", autocomplete: "name", "aria-describedby": "send-name-hint" });
+    nameInput.value = S.name || "";
+    nameInput.addEventListener("input", function () { S.name = nameInput.value; updateSend(); later(); });
+    nameInput.addEventListener("blur", flush);
+    var preview = h("textarea", { id: "send-text", rows: "8", readonly: true, "aria-label": "Your answers as text" });
+    var sent = false;
+    try { sent = localStorage.getItem(LS_KEY + "-sent") === "1"; } catch (e) {}
+    return h("section", { class: "section send" },
+      h("h2", null, "Send my answers"),
+      h("p", null, "They go straight to Shubs. Nobody else sees them. You can change any moment and send again; your earlier answers get replaced."),
+      h("div", { class: "field" },
+        h("label", { for: "send-name" }, "Your name"),
+        h("span", { class: "hint", id: "send-name-hint" }, "So Shubs knows whose answers these are."),
+        nameInput
+      ),
+      h("div", { class: "actions send-actions" },
+        h("button", { class: "btn", type: "button", id: "send-btn", onclick: submitAnswers }, sent ? "Send again" : "Send my answers")
+      ),
+      h("p", { class: "small", id: "send-status", "aria-live": "polite" }, sent ? "You’ve sent your answers from this device before. Sending again replaces them." : ""),
+      h("div", { id: "send-fallback", hidden: true },
+        h("p", { class: "small" }, "If sending doesn’t work, send them another way:"),
+        h("div", { class: "actions" },
+          h("a", { class: "btn quiet", id: "send-wa", target: "_blank", rel: "noopener" }, "Send on WhatsApp"),
+          h("button", { class: "link", type: "button", onclick: copyAnswers }, "Copy")
+        )
+      ),
+      h("details", { class: "send-preview" }, h("summary", null, "See what gets sent"), preview)
+    );
+  }
+  function updateSend() {
+    var text = answersText();
+    var pv = document.getElementById("send-text");
+    if (pv) pv.value = text;
+    var wa = document.getElementById("send-wa");
+    if (wa) wa.setAttribute("href", "https://wa.me/?text=" + encodeURIComponent(text));
+  }
+  function showFallback() { var f = document.getElementById("send-fallback"); if (f) f.removeAttribute("hidden"); }
+  function submitAnswers() {
+    flush();
+    var st = document.getElementById("send-status"), btn = document.getElementById("send-btn");
+    var say = function (t) { if (st) st.textContent = t; };
+    if (!S.name.trim()) { say("Add your name first, so Shubs knows whose answers these are."); var n = document.getElementById("send-name"); if (n) n.focus(); return; }
+    if (!/^https:\/\/script\.google\.com\//.test(SHEET_URL)) { say("Sending isn’t connected yet. Use WhatsApp or Copy below."); showFallback(); return; }
+    if (btn) btn.disabled = true;
+    say("Sending.");
+    var opts = { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(payload()) };
+    var done = function (again) {
+      if (btn) { btn.disabled = false; btn.textContent = "Send again"; }
+      say(again ? "Sent again. Your earlier answers were replaced." : "Sent. Thank you.");
+      try { localStorage.setItem(LS_KEY + "-sent", "1"); } catch (e) {}
+    };
+    var failed = function () { if (btn) btn.disabled = false; say("That didn’t go through. Try again, or use WhatsApp or Copy below."); showFallback(); };
+    fetch(SHEET_URL, opts).then(function (r) { return r.json(); }).then(function (d) {
+      if (d && d.ok) done(d.updated); else failed();
+    }).catch(function () {
+      // The sheet can save the row even when the browser can't read its reply, so send once more without reading it.
+      // The respondent ID means a repeat replaces the row rather than adding a second one.
+      fetch(SHEET_URL, Object.assign({}, opts, { mode: "no-cors" })).then(function () { done(false); }, failed);
+    });
+  }
+  function copyAnswers() {
+    var text = answersText();
+    var st = document.getElementById("send-status");
+    var fallback = function () {
+      var d = app.querySelector(".send-preview");
+      if (d) d.open = true;
+      var pv = document.getElementById("send-text");
+      if (pv) { pv.focus(); pv.select(); }
+      if (st) st.textContent = "The text is selected below. Copy it, then paste it to Shubs.";
+    };
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () { if (st) st.textContent = "Copied. Paste it to Shubs on WhatsApp or email."; }, fallback);
+      } else fallback();
+    } catch (e) { fallback(); }
+  }
+
+  /* owner-only results */
+  function entries() {
+    var list = [];
+    team.forEach(function (v, id) {
+      list.push({ id: id, me: id === uid, picks: cleanPicks(v.picks), why: cleanText(v.why), own: cleanText(v.own), final: typeof v.final === "string" ? v.final.slice(0, 2000) : "" });
+    });
+    return list.filter(function (e) { return Object.keys(e.picks).length || Object.keys(e.own).length || e.final.trim(); });
+  }
+  function nameOf(e) { return e.me ? "You" : (names[e.id] || "Someone"); }
+
+  function results() {
+    return h("main", { class: "wrap" },
+      topBar("Only you can see this"),
+      h("article", { class: "res", id: "results" }, resultsNodes())
+    );
+  }
+  function resultsNodes() {
+    var list = entries();
+    var head = [
+      h("p", { class: "kicker" }, "Team results"),
+      h("h2", null, list.length ? list.length + (list.length === 1 ? " person has" : " people have") + " answered" : "Nobody has answered yet"),
+      h("p", { class: "lede" }, "Picks, reasons and their own lines, moment by moment. Nobody else can see this page.")
+    ];
+    if (!list.length) return head;
+    var blocks = [];
+    MOMENTS.forEach(function (m, i) {
+      if (i === partStart(m.part)) blocks.push(h("p", { class: "res-part" }, "Part " + NUM[m.part] + ". " + PARTS[m.part].title));
+      var rows = m.opts.map(function (o) {
+        var who = list.filter(function (e) { return e.picks[m.id] === o.id; });
+        return { o: o, who: who };
+      }).sort(function (a, b) { return b.who.length - a.who.length; });
+      var answeredBy = list.filter(function (e) { return e.picks[m.id]; }).length;
+      var none = list.filter(function (e) { return e.picks[m.id] === "none"; });
+      var whys = list.filter(function (e) { return e.why[m.id]; });
+      var owns = list.filter(function (e) { return e.own[m.id]; });
+      blocks.push(h("section", { class: "res-m" },
+        h("h2", null, pad(i + 1) + "  " + m.short),
+        h("p", { class: "small" }, answeredBy + " of " + list.length + " picked one."),
+        rows.map(function (r) {
+          var w = answeredBy ? Math.round((r.who.length / answeredBy) * 100) : 0;
+          return h("div", { class: "row" },
+            h("span", { class: "txt" }, optText(r.o)),
+            h("span", { class: "bar" },
+              h("span", { class: "track", role: "img", "aria-label": r.who.length + " of " + answeredBy }, h("span", { class: "fill", style: "width:" + w + "%" })),
+              h("span", { class: "count" }, String(r.who.length))),
+            r.who.length ? h("span", { class: "who" }, r.who.map(nameOf).join(", ")) : null
+          );
+        }),
+        none.length ? h("p", { class: "small" }, "None of these: " + none.map(nameOf).join(", ")) : null,
+        whys.length ? [h("h3", null, "Why they picked it"), h("ul", { class: "notes" }, whys.map(function (e) {
+          var o = findOpt(m, e.picks[m.id]);
+          var ot = o ? optText(o) : "";
+          return h("li", null, h("span", { class: "by" }, nameOf(e) + (o ? ", on “" + ot.slice(0, 48) + (ot.length > 48 ? "…”" : "”") : "")), e.why[m.id]);
+        }))] : null,
+        owns.length ? [h("h3", null, "Lines they wrote"), h("ul", { class: "notes" }, owns.map(function (e) {
+          return h("li", null, h("span", { class: "by" }, nameOf(e)), e.own[m.id]);
+        }))] : null
+      ));
+    });
+    var finals = list.filter(function (e) { return e.final.trim(); });
+    return head.concat(blocks, finals.length ? [h("section", { class: "res-m" }, h("h2", null, "Anything else"), h("ul", { class: "notes" }, finals.map(function (e) {
+      return h("li", null, h("span", { class: "by" }, nameOf(e)), e.final);
+    })))] : []);
+  }
+
+  /* navigation */
+  function render(keepScroll) {
+    var y = window.scrollY;
+    var s = S.screen;
+    if (s === "results" && !owner) s = S.screen = "cover";
+    var node = s === "cover" ? cover() : s === "intro" ? intro() : s === "part" ? partScreen(S.p) : s === "end" ? end() : s === "results" ? results() : question(S.i);
+    app.replaceChildren(node);
+    if (s === "end") updateSend();
+    if (keepScroll) window.scrollTo(0, y);
+  }
+  function go(screen, i) {
+    flush();
+    S.screen = screen;
+    if (screen === "part" && typeof i === "number") S.p = Math.max(0, Math.min(2, i));
+    else if (typeof i === "number") S.i = Math.max(0, Math.min(TOTAL - 1, i));
+    render();
+    window.scrollTo(0, 0);
+  }
+  function next() {
+    if (S.i >= TOTAL - 1) { go("end"); return; }
+    var nextPart = MOMENTS[S.i + 1].part;
+    if (nextPart !== MOMENTS[S.i].part) go("part", nextPart);
+    else go("m", S.i + 1);
+  }
+  function prev() {
+    var p = MOMENTS[S.i].part;
+    if (S.i === partStart(p)) go("part", p);
+    else go("m", S.i - 1);
+  }
+
+  function choose(m, id) {
+    var first = !S.picks[m.id];
+    if (id) S.picks[m.id] = id; else delete S.picks[m.id];
+    persist();
+    render(true);
+    if (first && id) {
+      var x = app.querySelector(".extra");
+      if (x) {
+        var r = x.getBoundingClientRect();
+        if (r.top > window.innerHeight * 0.85) {
+          var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+          window.scrollTo({ top: window.scrollY + r.top - window.innerHeight * 0.5, behavior: reduce ? "auto" : "smooth" });
+        }
+      }
+    }
+    var sel = app.querySelector('.opt[aria-checked="true"]');
+    if (sel) sel.focus({ preventScroll: true });
+  }
+
+  document.addEventListener("keydown", function (e) {
+    if (S.screen !== "m" || e.metaKey || e.ctrlKey || e.altKey) return;
+    var t = e.target;
+    if (t && (t.tagName === "TEXTAREA" || t.tagName === "INPUT")) return;
+    var m = MOMENTS[S.i], opts = ordered(m);
+    var idx = ["1", "2", "3", "4"].indexOf(e.key);
+    if (idx < 0) idx = LETTERS.indexOf(String(e.key || "").toUpperCase());
+    if (idx >= 0 && idx < opts.length) { e.preventDefault(); choose(m, opts[idx].id); return; }
+    if (e.key === "ArrowRight") { e.preventDefault(); next(); }
+    else if (e.key === "ArrowLeft") { e.preventDefault(); prev(); }
+  });
+
+  /* saving */
+  var timer = null, writing = false, again = false;
+  function later() { clearTimeout(timer); timer = setTimeout(function () { timer = null; persist(); }, 900); }
+  function flush() { if (timer) { clearTimeout(timer); timer = null; persist(); } }
+  function persist() {
+    try { localStorage.setItem(LS_KEY, JSON.stringify({ picks: S.picks, why: S.why, own: S.own, final: S.final, name: S.name })); } catch (e) {}
+    if (live && canWrite) write();
+  }
+  function write() {
+    if (writing) { again = true; return; }
+    writing = true;
+    setSave("saving");
+    var retried = false;
+    (function loop() {
+      again = false;
+      var body = { picks: Object.assign({}, S.picks), why: Object.assign({}, S.why), own: Object.assign({}, S.own), final: S.final || "", name: S.name || "", updatedAt: new Date().toISOString() };
+      db.doc(COLL + "/" + uid).set(body).then(function () {
+        if (owner) { team.set(uid, body); renderLive(); }
+        if (again) return loop();
+        writing = false; setSave("saved");
+      }, function (err) {
+        var code = err && err.code;
+        if (code === "unavailable" && !retried) { retried = true; setTimeout(loop, 600 + Math.random() * 900); return; }
+        writing = false;
+        if (code === "invalid_argument" || code === "revoked" || code === "not_granted" || code === "capability_disabled" || code === "capability_removed") {
+          canWrite = false; setSave(""); softRender();
+        } else if (code === "quota_exceeded") setSave("full");
+        else setSave("error");
+      });
+    })();
+  }
+  function saveLabel() {
+    if (booted && !saving()) return "Kept on this device. You’ll send it at the end.";
+    return saveState === "saving" ? "Saving." : saveState === "saved" ? "Saved." : saveState === "error" ? "Couldn’t save just now. It will try again when you type." : saveState === "full" ? "The quiz is full and can’t save more." : "";
+  }
+  function setSave(s) {
+    saveState = s;
+    var txt = saveLabel();
+    app.querySelectorAll(".save-status").forEach(function (n) { n.textContent = txt; });
+  }
+
+  function renderLive() {
+    var tc = document.getElementById("team-count");
+    if (tc) tc.textContent = teamCountText();
+    var r = document.getElementById("results");
+    if (r) r.replaceChildren.apply(r, flat(resultsNodes()));
+  }
+  function flat(a) { var out = []; (function walk(x) { if (Array.isArray(x)) x.forEach(walk); else if (x) out.push(x); })(a); return out; }
+  function softRender() {
+    var a = document.activeElement;
+    if (a && a.tagName === "TEXTAREA") { renderLive(); var sn = document.getElementById("save-note"); if (sn) sn.textContent = saveNoteText(); }
+    else render(true);
+  }
+
+  function resolveNames() {
+    if (!user || typeof user.profiles !== "function") return;
+    var ids = [];
+    team.forEach(function (v, id) { if (id !== uid) ids.push(id); });
+    if (!ids.length) return;
+    user.profiles(ids).then(function (ps) {
+      var changed = false;
+      ids.forEach(function (id) { var nm = (ps && ps[id] && ps[id].name) || ""; if (names[id] !== nm) { names[id] = nm; changed = true; } });
+      if (changed) renderLive();
+    }, function () {});
+  }
+
+  function boot() {
+    var C = window.claude;
+    if (!C || typeof C.use !== "function") { booted = true; softRender(); return; }
+    Promise.all([
+      C.use("user").catch(function () { return null; }),
+      C.use("db").catch(function () { return null; })
+    ]).then(function (r) {
+      user = r[0]; db = r[1];
+      if (!user || !db) { booted = true; softRender(); return; }
+      return Promise.all([user.id(), user.can("data.write"), user.isOwner()]).then(function (x) {
+        uid = x[0];
+        if (x[1] === false) canWrite = false;
+        owner = x[2] === true;
+        if (!uid) { booted = true; softRender(); return; }
+        live = true;
+        var hadLocal = Object.keys(S.picks).length + Object.keys(S.why).length + Object.keys(S.own).length + (S.final ? 1 : 0);
+        return db.doc(COLL + "/" + uid).get().then(function (snap) {
+          if (snap.exists) load(snap.data() || {}, true);
+          booted = true;
+          if (hadLocal && canWrite) persist();
+          softRender();
+          if (owner) {
+            db.collection(COLL).onSnapshot(function (qs) {
+              var nextTeam = new Map();
+              qs.docs.forEach(function (d) { if (d.exists) { var v = d.data(); if (v && typeof v === "object") nextTeam.set(d.id, v); } });
+              team = nextTeam;
+              renderLive();
+              resolveNames();
+            }, function () {});
+          }
+        }, function () { booted = true; softRender(); });
+      });
+    }).catch(function () { booted = true; softRender(); });
+  }
+
+  render();
+  boot();
+
+  window.__decadeQuiz = {
+    go: go,
+    total: TOTAL,
+    pick: function (i, k) { var m = MOMENTS[i]; if (!m) return; var o = ordered(m)[k]; choose(m, o ? o.id : "none"); },
+    clear: function () { S.picks = {}; S.why = {}; S.own = {}; S.final = ""; S.name = ""; render(); },
+    demo: function () {
+      if (live) return;
+      owner = true; demoMode = true;
+      var ids = ["u_demo_1", "u_demo_2", "u_demo_3"];
+      ids.forEach(function (id, n) {
+        var picks = {}, why = {}, own = {};
+        MOMENTS.forEach(function (m, i) { picks[m.id] = m.opts[(i + n) % m.opts.length].id; if (n === 0) why[m.id] = "Reads like something a person would send."; if (n === 1 && i % 3 === 0) own[m.id] = "A line written by a teammate, as long as a real one might be."; });
+        team.set(id, { picks: picks, why: why, own: own, final: n === 2 ? "Less maths in the push notifications." : "" });
+        names[id] = "Teammate " + (n + 1);
+      });
+      render();
+    }
+  };
+})();
+</script>
+</body>
+</html>
