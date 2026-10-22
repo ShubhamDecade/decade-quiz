@@ -201,7 +201,7 @@ input[type="text"]:focus{outline:2px solid var(--gold-ink);outline-offset:1px}
     },
     {
       id: "d2", part: 0, short: "Who’s speaking", channel: "WhatsApp", fn: "Inform", kind: "pair",
-      situation: "The same two messages, written four ways. Who’s doing the talking?",
+      situation: "We’ve written the same two messages four ways. Who’s doing the talking?",
       opts: [
         { id: "d2a", lines: ["I’ve read your four funds. One of them needs a decision. Want to talk it through?", "That forward says the stock will be up 40% by March. Nobody can promise that, so I wouldn’t buy it."] },
         { id: "d2b", lines: ["We’ve read your four funds. One of them needs a decision. Want to talk it through?", "That forward says the stock will be up 40% by March. Nobody can promise that, so we wouldn’t buy it."] },
@@ -246,7 +246,7 @@ input[type="text"]:focus{outline:2px solid var(--gold-ink);outline-offset:1px}
     },
     {
       id: "d6", part: 0, short: "How many years", channel: "In the app", fn: "Educate",
-      situation: "Same fee, four time frames. Which one makes her care without scaring her?",
+      situation: "The four lines show the same fee over different time frames. Which one makes her care without scaring her?",
       context: "Her three regular-plan funds hold ₹5 lakh, and she adds ₹25,000 a month. The figures assume 9% a year, as in the product doc.",
       widget: "the fee gap drawn over time, with its assumptions.",
       buttons: ["Guide me through SIP changes", "How did you work this out?"],
@@ -274,7 +274,7 @@ input[type="text"]:focus{outline:2px solid var(--gold-ink);outline-offset:1px}
     /* Part two */
     {
       id: "t0", part: 1, short: "The brand line", channel: "Under the logo", fn: "Inspire", kind: "poster",
-      situation: "The line that sits under our name for years. It’s about her life, not about the product.",
+      situation: "This line sits under our name for years. It’s about her life. The product line says what Decade is.",
       opts: [
         { id: "t0a", t: "The power is knowing." },
         { id: "t0b", t: "Know where you’re going." },
@@ -284,7 +284,7 @@ input[type="text"]:focus{outline:2px solid var(--gold-ink);outline-offset:1px}
     },
     {
       id: "t1", part: 1, short: "The product line", channel: "Under the logo", fn: "Inform", kind: "poster",
-      situation: "The line that says what Decade is, in her words. A stranger should get it in one read.",
+      situation: "This line says what Decade is, in her words. A stranger should get it in one read.",
       opts: [
         { id: "t1a", t: "Decades of knowledge, ready for your money." },
         { id: "t1b", t: "Decades of research, on your money." },
@@ -294,7 +294,7 @@ input[type="text"]:focus{outline:2px solid var(--gold-ink);outline-offset:1px}
     },
     {
       id: "t2", part: 1, short: "Poster: being early", channel: "Poster on a metro platform", fn: "Inspire", kind: "poster",
-      situation: "A poster on a metro platform. You have until the train pulls in. The corner says Decade.",
+      situation: "The poster is on a metro platform, with Decade’s name in the corner. You have until the train pulls in.",
       opts: [
         { id: "t2a", t: "Your phone has 4,000 reviews. Your SIP has none." },
         { id: "t2b", t: "Congratulations on your first lakh. Your advisor’s here." },
@@ -304,7 +304,7 @@ input[type="text"]:focus{outline:2px solid var(--gold-ink);outline-offset:1px}
     },
     {
       id: "t3", part: 1, short: "Poster: a smile", channel: "Poster or social post", fn: "Inspire", kind: "poster",
-      situation: "A poster that should make someone smile. Each line tries it a different way.",
+      situation: "This poster should make someone smile. Each line tries it a different way.",
       opts: [
         { id: "t3a", t: "The early bird gets the advisor." },
         { id: "t3b", t: "You live the decade. We’ll do the paperwork." },
@@ -314,7 +314,7 @@ input[type="text"]:focus{outline:2px solid var(--gold-ink);outline-offset:1px}
     },
     {
       id: "t4", part: 1, short: "Static ads", channel: "Instagram static ad", fn: "Engage", kind: "ad",
-      situation: "Four static ads you’d see while doomscrolling.",
+      situation: "Here are four static ads you’d see while doomscrolling.",
       context: "Every ad ends the same way: SEBI-registered investment advisor. ₹99 the first month, then ₹299. Cancel any month.",
       ask: "Which one stops your thumb?",
       opts: [
@@ -326,7 +326,7 @@ input[type="text"]:focus{outline:2px solid var(--gold-ink);outline-offset:1px}
     },
     {
       id: "t5", part: 1, short: "The portfolio review offer", channel: "Instagram static ad", fn: "Engage", kind: "ad",
-      situation: "Most finance apps get people in the door with a free look at their funds. Ours costs ₹99 and comes with an advisor. Four ways to say it, each with a different reason to trust us.",
+      situation: "Most finance apps get people in the door with a free look at their funds. Ours costs ₹99 and comes with an advisor. Each of the four lines gives a different reason to trust us.",
       opts: [
         { id: "t5a", h: "Which of your funds is pulling its weight?", t: "Decade tells you what to keep and what to change in your funds. It can see them, but it can’t move a rupee without you." },
         { id: "t5b", h: "Your funds, read by real advisors", t: "Decade’s research team, led by Maanas Agarwal, reads every fund you own and tells you what to change. SEBI-registered." },
@@ -338,7 +338,7 @@ input[type="text"]:focus{outline:2px solid var(--gold-ink);outline-offset:1px}
     /* Part three */
     {
       id: "s1", part: 2, short: "SIP tomorrow", channel: "Push notification", fn: "Inform", kind: "push",
-      situation: "The night before her ₹10,000 SIP goes out. She has ₹38,400 in the bank. It lands on her lock screen somewhere between two reels.",
+      situation: "It’s the night before her ₹10,000 SIP goes out, and she has ₹38,400 in the bank. The push lands on her lock screen somewhere between two reels.",
       opts: [
         { id: "s1a", h: "SIP. Don’t skip.", t: "₹10,000 goes out tomorrow. Balance is fine. Tap to pause if you need to." },
         { id: "s1b", h: "SIP tomorrow: ₹10,000", t: "Balance ₹38,400, which covers it with ₹28,400 to spare." },
@@ -419,7 +419,7 @@ input[type="text"]:focus{outline:2px solid var(--gold-ink);outline-offset:1px}
     },
     {
       id: "b2", part: 2, short: "Twelve SIPs", channel: "WhatsApp", fn: "Engage",
-      situation: "Her twelfth SIP in a row just went through. Not one missed.",
+      situation: "Her twelfth SIP just went through, and she hasn’t missed one.",
       opts: [
         { id: "b2a", t: "Twelve SIPs without a miss. That’s ₹1.2 lakh invested on time, every time. Nothing to do; I just noticed." },
         { id: "b2b", t: "Twelve SIPs without a miss. I may have done a small dance." },
@@ -583,7 +583,7 @@ input[type="text"]:focus{outline:2px solid var(--gold-ink);outline-offset:1px}
         h("section", { class: "section" },
           h("p", { class: "num" }, "01  What copy is"),
           h("h2", null, "Copy is every word a customer reads from us."),
-          h("p", null, "The ad they scroll past at midnight. The push the night before a SIP. The reply at 11pm about whether they can afford a car. The button that says Go ahead."),
+          h("p", null, "It’s the ad they scroll past at midnight, the push the night before a SIP, the reply at 11pm about whether they can afford a car, and the button that says Go ahead."),
           h("p", null, "Most of our customers will never meet our advisors. Everything they know about us, they’ll have read.")
         ),
         h("section", { class: "section" },
@@ -600,11 +600,11 @@ input[type="text"]:focus{outline:2px solid var(--gold-ink);outline-offset:1px}
           h("p", { class: "num" }, "03  Where we’ve got to"),
           h("p", { class: "voice" }, "An expert’s substance, in a friend’s voice."),
           h("p", null, "That’s the draft. Decade speaks as “I”, says what it recommends, shows the maths and talks in rupees and dates. The full draft is in ", h("a", { href: RULES_URL, target: "_blank", rel: "noopener", class: "inline" }, "How Decade speaks"), "."),
-          h("p", null, "Every moment in this quiz is a message to Arunima Dasgupta: 26, salaried, a SIP a colleague suggested, an FD her bank sold her. Arunima means first light. Das sounds like ten. Yes, on purpose.")
+          h("p", null, "Every moment in this quiz is a message to Arunima Dasgupta: 26, salaried, a SIP a colleague suggested, an FD her bank sold her. Arunima means first light, and Das sounds like ten. That’s why we picked it.")
         ),
         h("section", { class: "section" },
           h("p", { class: "num" }, "04  How this works"),
-          h("p", null, "Three parts. First, how Decade introduces itself, where the product doc and our draft rules don’t agree yet. Then Decade out in the world: the brand and product lines, posters and ads. Then Decade on Arunima’s phone: SIP days, FD dates and the awkward messages."),
+          h("p", null, "The quiz has three parts. First, how Decade introduces itself, where the product doc and our draft rules don’t agree yet. Then Decade out in the world: the brand and product lines, posters and ads. Then Decade on Arunima’s phone: SIP days, FD dates and the awkward messages."),
           h("p", null, "Every moment has four real options. None of them is a trick. Pick the one you’d ship. Say why if you like, or write a better line. In the product, most messages come with a card and buttons; where they do, you’ll see what they show."),
           h("p", null, "Nobody sees anyone else’s picks. When everyone’s done, we’ll go through the team’s choices in a session, surprises first. The tone-of-voice doc comes out of that."),
           h("p", { class: "small", id: "save-note" }, saveNoteText()),
