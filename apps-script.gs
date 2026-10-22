@@ -24,12 +24,29 @@ function doPost(e) {
     }
     if (target) sheet.getRange(target, 1, 1, row.length).setValues([row]);
     else sheet.appendRow(row);
+    notify_(data, !!target);
     return json_({ ok: true, updated: !!target });
   } catch (err) {
     return json_({ ok: false, error: String(err) });
   } finally {
     lock.releaseLock();
   }
+}
+
+// Emails the sheet's owner each time someone sends their answers.
+// A failed email never stops the answers being saved.
+function notify_(data, updated) {
+  try {
+    var answers = data.answers || [];
+    var answered = answers.filter(function (a) { return a.pick || a.own; }).length;
+    var name = String(data.name || '').trim() || 'Someone';
+    var subject = (updated ? 'Quiz answers updated: ' : 'New quiz answers: ') + name;
+    var body = name + (updated ? ' sent their answers again.' : ' sent their answers.') + '\n\n' +
+      'Moments answered: ' + answered + ' of ' + answers.length + '\n' +
+      (data.final ? 'Anything else: ' + String(data.final).slice(0, 500) + '\n' : '') +
+      '\nOpen the sheet: ' + SpreadsheetApp.getActiveSpreadsheet().getUrl();
+    MailApp.sendEmail(Session.getEffectiveUser().getEmail(), subject, body);
+  } catch (err) {}
 }
 
 // Open the web app URL in a browser to check it's live.
